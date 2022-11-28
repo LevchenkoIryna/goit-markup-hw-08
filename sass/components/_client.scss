@@ -1,0 +1,42 @@
+.client {
+  @include section;
+}
+
+.client-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.client-block__border {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--socials-icons-body);
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.client-block__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--socials-icons-body);
+  width: 100%;
+  height: 100%;
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

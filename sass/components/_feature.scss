@@ -1,0 +1,37 @@
+.feature {
+  @include section(94px, 0);
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.feature__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature__content:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--bcg-color-gray);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.feature__text {
+  color: var(--second-text-color);
+  line-height: 1.71;
+  width: 270px;
+  margin-top: 10px;
+}
