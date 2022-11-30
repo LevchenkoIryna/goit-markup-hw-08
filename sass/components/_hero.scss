@@ -1,5 +1,5 @@
 .hero {
-  @include section;
+  @extend %section;
 
   max-width: 1600px;
   min-height: 600px;

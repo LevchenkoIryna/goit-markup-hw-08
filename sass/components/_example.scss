@@ -1,5 +1,5 @@
 .example {
-  @include section;
+  @extend %section;
 
   background-color: var(--basic-white-color);
 }

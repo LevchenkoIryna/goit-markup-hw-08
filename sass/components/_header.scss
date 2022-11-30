@@ -8,16 +8,6 @@
   align-items: center;
 }
 
-// Сторінка портфоліо
-
-.header__border {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid var(--bcg-color-gray);
-}
-
-
 /* Site nav */
 
 .site-nav {
@@ -77,8 +67,6 @@
   }
 }
 
-
-
 /* Auth-nav */
 
 .auth-nav {
@@ -112,5 +100,11 @@
   fill: currentColor;
 }
 
+// Сторінка портфоліо
 
-
+.header__border {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid var(--bcg-color-gray);
+}

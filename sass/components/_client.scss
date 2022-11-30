@@ -1,5 +1,5 @@
 .client {
-  @include section;
+  @extend %section;
 }
 
 .client-block {

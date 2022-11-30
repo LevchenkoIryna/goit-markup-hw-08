@@ -1,5 +1,5 @@
 .work {
-  @include section;
+  @extend %section;
 }
 
 .work-block {

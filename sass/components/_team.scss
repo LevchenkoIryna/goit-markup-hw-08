@@ -1,5 +1,5 @@
 .team {
-  @include section;
+  @extend %section;
 
   max-width: 1600px;
   margin-left: auto;
