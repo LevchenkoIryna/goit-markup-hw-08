@@ -1,5 +1,5 @@
 .feature {
-  @include section(94px, 0);
+    @extend %section;
 }
 
 .feature__title {
