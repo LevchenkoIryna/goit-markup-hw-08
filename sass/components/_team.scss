@@ -10,8 +10,15 @@
 
 .team-block {
   display: flex;
-  flex-wrap: wrap;
+  
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+
 
   &__box {
     background-color: var(--basic-white-color);

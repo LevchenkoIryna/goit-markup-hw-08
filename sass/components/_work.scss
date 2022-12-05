@@ -1,7 +1,8 @@
-@media screen and (min-width: 1200px) {
+
   .work {
     @extend %section;
   }
+  
   
   .work-block {
     display: flex;
@@ -12,13 +13,14 @@
   .team__title,
   .client__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     margin-bottom: 30px;
   
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
+      font-size: 36px;
     }
   }
   
@@ -53,5 +55,5 @@
     }
   }
 
-}
+
 
