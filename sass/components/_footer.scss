@@ -19,7 +19,7 @@
 @media screen and (min-width: 1200px) {
   .logo-block__tablet {
   display:flex;
-
+  align-items: baseline;
   }
 }
 
@@ -122,8 +122,7 @@
   
 
   @media screen and (min-width: 1200px) {
-    
-    // display: inline-block;
+    display: inline-block;
     margin-right: 93px;
   }
   
@@ -145,7 +144,13 @@
     display: flex;
     justify-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+      
+    }
 }
+
+
 
 .footer-list {
 

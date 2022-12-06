@@ -1,10 +1,16 @@
 
   .work {
-    @extend %section;
+    @media screen and (max-width: 1199px) {
+      display: none;
+      
+    }
+    margin-bottom: 94px;
+    
   }
   
   
   .work-block {
+    display: none;
     display: flex;
     flex-wrap: wrap;
   }

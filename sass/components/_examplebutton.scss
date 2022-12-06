@@ -5,7 +5,9 @@
   margin-bottom: 56px;
 
   
-  @media screen and (max-width: 768px) {
+
+  
+  @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -13,6 +15,11 @@
   @media screen and (min-width: 1200px) {
     justify-content: center;
   }
+}
+
+.button-example__menu:nth-child(3) {
+  margin-right: 130px;
+
 }
 
 .button-example__menu {
