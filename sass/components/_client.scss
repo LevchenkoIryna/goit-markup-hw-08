@@ -10,15 +10,7 @@
   align-items: center;
   gap: 30px;
 
-  // @media screen and (min-width: 480px) {
-  //   display: inline;
-  // }
-  
-  // justify-content: center;
-  // align-items: center;
-  // gap: 30px;
-
-  &__icon {
+   &__icon {
     fill: currentColor;
   }
   
@@ -67,7 +59,23 @@
 }
 
 .client-block__icon {
-  margin: 16px 52px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 52px;
+    margin-right: 52px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
   
 
 }

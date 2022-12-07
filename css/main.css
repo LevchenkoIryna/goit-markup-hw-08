@@ -266,7 +266,6 @@ p {
   margin-right: 10px;
   fill: currentColor;
 }
-
 .header__border {
   max-width: 1600px;
   margin-left: auto;
@@ -953,7 +952,26 @@ p {
 }
 
 .client-block__icon {
-  margin: 16px 52px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .client-block__icon {
+    margin-left: 52px;
+    margin-right: 52px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-block__icon {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-block__icon {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }
 
 .contacts {
