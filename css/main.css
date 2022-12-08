@@ -1269,6 +1269,18 @@ p {
 .example-box {
   background-color: var(--basic-white-color);
 }
+@media screen and (min-width: 768px) {
+  .example-box {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .example-box {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
 .example-box__link {
   display: block;
@@ -1337,7 +1349,6 @@ p {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   list-style: none;
-  word-break: break-all;
 }
 
 .description__text {
@@ -1347,20 +1358,39 @@ p {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .description__text--tablet {
+    margin-bottom: 36px;
+  }
+}
+
 .button-example {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .button-example {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-example {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .button-example {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1369,10 +1399,6 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.button-example__menu:nth-child(3) {
-  margin-right: 130px;
 }
 
 .button-example__menu {
@@ -1399,6 +1425,10 @@ p {
   color: var(--basic-white-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-example__menu--tablet {
+  margin-right: 130px;
 }
 
 .menu {
