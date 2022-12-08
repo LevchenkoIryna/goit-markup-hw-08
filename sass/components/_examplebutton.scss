@@ -56,6 +56,8 @@
   }
 }
 
-.button-example__menu--tablet {
-  margin-right: 130px;
+@media screen and (max-width: 767px) {
+  .button-example__menu--tablet {
+    margin-right: 130px;
+  }
 }
